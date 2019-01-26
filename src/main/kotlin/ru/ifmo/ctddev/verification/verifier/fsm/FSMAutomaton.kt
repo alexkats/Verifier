@@ -3,7 +3,7 @@ package ru.ifmo.ctddev.verification.verifier.fsm
 import ru.ifmo.ctddev.verification.verifier.ltl.BaseFormula
 
 data class FSMAutomaton(
-    val initialState: Int,
+    var initialState: Int? = null,
     val nodes: MutableSet<Int> = mutableSetOf(),
     val accepting: MutableSet<Int> = mutableSetOf(),
     val transitions: MutableMap<Int, MutableMap<BaseFormula, MutableList<Int>>> = mutableMapOf()
