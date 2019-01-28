@@ -24,4 +24,18 @@ data class FSMAutomaton(
     }
 
     fun accepts(stateId: Int) = stateId in accepting
+
+    fun changeNames(mapper: (BaseFormula) -> BaseFormula): FSMAutomaton {
+        val result = FSMAutomaton()
+
+        transitions.forEach { k, v ->
+            v.forEach { f, value ->
+                value.forEach { result.addTransition(k, it, mapper(f)) }
+            }
+        }
+
+        accepting.forEach { result.addAccepting(it) }
+        result.initialState = initialState
+        return result
+    }
 }
