@@ -10,7 +10,7 @@ import java.io.File
 
 fun main(args: Array<String>) {
 
-    val helper = { println("Usage: java -jar <file with ltl> <file with automaton schema> <output file>")}
+    val helper = { println("Usage: java -jar <file with ltl> <file with automaton schema> <output file>") }
 
     if (args.size != 3) {
         helper()
