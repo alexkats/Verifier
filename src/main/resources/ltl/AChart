@@ -1,0 +1,11 @@
+'S(state0)'
+F('S(SName)' | 'S(ID)')
+G'S(SName)'
+G'Invalid'
+G('S(SName)' | !'S(SName)')
+X X X X X ('S(state0)')
+X('E(name)' | 'E(id)')
+true
+F 'E(Number)'
+F(X X X X X ('S(state0)'))
+F ('E(Number)' R !'S(ID)')

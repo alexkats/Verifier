@@ -1,0 +1,7 @@
+!'A(AddToken)' U 'S(SText)'
+'S(state0)'
+F ('E(number)' | 'E(quote)')
+X F 'S(state0)'
+F 'S(state0)'
+F X 'S(state0)'
+G F ('E(number)' | 'S(SText)')

@@ -20,7 +20,6 @@ fun BaseFormula.asAutomaton(): FSMAutomaton {
     val names = mutableMapOf<String, String>()
     val ltl = changeNames { names.getOrPut(it) { "v${names.size}" } }
     val spinFormula = ltl.toString().replace("R", "V")
-    println(spinFormula)
     val backNames = names.map { val p = it.toPair(); p.second to p.first }.toMap()
     val automaton = spinFormula.toFSM()
     return automaton.changeNames { it.changeNames { n -> backNames.getValue(n) } }
