@@ -9,6 +9,11 @@ automaton.
 java -jar verifier.jar <file with ltl (several formulas are accepted)> <file with automaton schema> <output file>
 ```
 
+You need compiled binary of ltl2ba in order to run this.
+You should put it in the same directory as ***verifier.jar***.
+Compiled binaries you can find under
+***src/main/resources/ltl2ba***.
+
 ## Automaton format
 
 Automaton is specified in xml format. Please,

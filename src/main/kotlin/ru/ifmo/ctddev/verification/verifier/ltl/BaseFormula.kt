@@ -65,4 +65,4 @@ private fun String.toFSM(): FSMAutomaton {
 }
 
 private fun String.convertToBuchi() =
-    "${if (isWindows()) "ltl2ba.exe" else "./ltl2ba"} -f $this".runCommand(File("src/main/resources/ltl2ba"))
+    "${if (isWindows()) "ltl2ba.exe" else "./ltl2ba"} -f $this".runCommand(File("."))
