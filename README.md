@@ -10,7 +10,8 @@ java -jar verifier.jar <file with ltl (several formulas are accepted)> <file wit
 ```
 
 You need compiled binary of ltl2ba in order to run this.
-You should put it in the same directory as ***verifier.jar***.
+You should put it in the same directory as ***verifier.jar***,
+which is located in the root folder for your convenience.
 Compiled binaries you can find under
 ***src/main/resources/ltl2ba***.
 
