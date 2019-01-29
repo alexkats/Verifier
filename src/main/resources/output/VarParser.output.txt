@@ -1,0 +1,8 @@
+Checking formula: G !'S(state13)' ... correct
+
+
+
+Checking formula: G !'S(state14)' ... correct
+
+
+

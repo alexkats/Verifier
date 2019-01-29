@@ -15,6 +15,11 @@ which is located in the root folder for your convenience.
 Compiled binaries you can find under
 ***src/main/resources/ltl2ba***.
 
+Some examples of ltl formulas are provided for different
+automatons. You can find them under 
+***src/main/resources/ltl***. Output for these results is located
+under ***src/main/resources/output***. 
+
 ## Automaton format
 
 Automaton is specified in xml format. Please,

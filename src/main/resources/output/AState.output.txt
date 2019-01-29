@@ -1,0 +1,54 @@
+Checking formula: !'A(AddToken)' U 'S(SText)' ... correct
+
+
+
+Checking formula: 'S(state0)' ... correct
+
+
+
+Checking formula: F ('E(number)' | 'E(quote)') ... correct
+
+
+
+Checking formula: X F 'S(state0)' ... incorrect
+Example:
+S(state0)
+E(labelString)
+S(SName)
+E(quote)
+A(ClearText)
+S(SText)
+E(*)
+A(AddToken)
+S(SText)
+E(*)
+A(AddToken)
+S(SText)
+
+
+
+Checking formula: F 'S(state0)' ... correct
+
+
+
+Checking formula: F X 'S(state0)' ... incorrect
+Example:
+S(state0)
+E(labelString)
+S(SName)
+E(quote)
+A(ClearText)
+S(SText)
+E(*)
+A(AddToken)
+S(SText)
+E(*)
+A(AddToken)
+S(SText)
+
+
+
+Checking formula: G F ('E(number)' | 'S(SText)') ... correct
+
+
+
